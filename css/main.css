@@ -4,7 +4,7 @@
 	}
 
 	#mainGoBtns {
-	    margin-top: 3%;
+	    margin-top: 10px;
 	    margin-left: calc(50% - 120px);
 	}
 
@@ -34,6 +34,11 @@
 
 	#createClientBtn {
 		margin-right: 10px;
+	}
+	#orText {
+	    text-align: center;
+	    opacity: 0.5;
+	    margin-top: 20px;
 	}
 /* IDs -- */
 
