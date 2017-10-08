@@ -1,0 +1,68 @@
+/* IDs -- ++ --*/
+	#mainHeader {
+		margin-top: 5%;
+	}
+
+	#mainGoBtns {
+	    margin-top: 3%;
+	    margin-left: calc(50% - 120px);
+	}
+
+	#mainMejoraPvLogo {
+		margin: 0px 0px 0px calc(50% - 170px);
+	}
+
+	#mainSponsorsText {
+		margin: 10% 0px 0px calc(50% - 64px);
+	    opacity: 0.5;
+	}
+
+	#sponsorsRow {
+		height: 10%;
+	}
+
+	#cDCLayout {
+		position: absolute;
+	    width: 100%;
+	    top: 70%;
+	    z-index: -1;
+	}
+
+	#cDCLayout img {
+	    width: inherit;
+	}
+
+	#createClientBtn {
+		margin-right: 10px;
+	}
+/* IDs -- */
+
+/* classes -- ++ -- */
+.yellow-square {
+	width: 33%;
+	margin: 5% 33% 0% 33%;
+	height: fit-content;
+	border: solid 5px;
+	border-color: #EABF3F;
+	border-radius: 5px;
+}
+
+.sponsor-img {
+    height: inherit;
+}
+.sponsor-img-div {
+	text-align: center;
+    width: 50%;
+    height: 70px;
+}
+/* classes -- */
+
+/* Responses -- ++ -- */
+
+@media only screen and (max-width: 660px) {
+	.sponsor-img-div {
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+/* Responses --*/
