@@ -9,12 +9,14 @@
 	}
 
 	#mainMejoraPvLogo {
-		margin: 0px 0px 0px calc(50% - 170px);
+		margin: 10vh 0px 0px calc(50% - 170px);
+	    height: 126px;
+	    width: 571px;
 	}
 
 	#mainSponsorsText {
-		margin: 10% 0px 0px calc(50% - 64px);
-	    opacity: 0.5;
+		margin: 5vh 0px 0px calc(50% - 64px);
+    	opacity: 0.5;
 	}
 
 	#sponsorsRow {
@@ -24,8 +26,10 @@
 	#cDCLayout {
 		position: absolute;
 	    width: 100%;
-	    top: 70%;
+	    bottom: 0px;
 	    z-index: -1;
+	    left: 0px;
+	    opacity: 0.2;
 	}
 
 	#cDCLayout img {
@@ -35,39 +39,46 @@
 	#createClientBtn {
 		margin-right: 10px;
 	}
+	
 	#orText {
 	    text-align: center;
 	    opacity: 0.5;
-	    margin-top: 20px;
+	    margin-top: 60px;
+	}
+
+	#goToContentBtn {
+    	margin-left: calc(50vw - 50px);
+	    margin-bottom: 8vh;
+	    margin-top: 1vh;
 	}
 /* IDs -- */
 
 /* classes -- ++ -- */
-.yellow-square {
-	width: 33%;
-	margin: 5% 33% 0% 33%;
-	height: fit-content;
-	border: solid 5px;
-	border-color: #EABF3F;
-	border-radius: 5px;
-}
+	.yellow-square {
+	    width: 33%;
+	    margin: 5% 33vw 0% 33vw;
+	    height: fit-content;
+	    border: solid 5px;
+	    border-color: #EABF3F;
+	    border-radius: 5px;
+	}
 
-.sponsor-img {
-    height: inherit;
-}
-.sponsor-img-div {
-	text-align: center;
-    width: 50%;
-    height: 70px;
-}
+	.sponsor-img {
+	    height: inherit;
+	}
+	.sponsor-img-div {
+		text-align: center;
+	    width: 50%;
+	    height: 70px;
+	}
 /* classes -- */
 
 /* Responses -- ++ -- */
 
-@media only screen and (max-width: 660px) {
-	.sponsor-img-div {
-		width: 100%;
-		margin-top: 10px;
+	@media only screen and (max-width: 660px) {
+		.sponsor-img-div {
+			width: 100%;
+			margin-top: 10px;
+		}
 	}
-}
 /* Responses --*/
