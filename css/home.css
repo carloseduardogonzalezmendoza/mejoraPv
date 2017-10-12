@@ -2,6 +2,7 @@
 	:root {
 		--img-size: 15vw;
 		--input-width: 50vw;
+		--home-font-size: 1.5em;
 	};
 /* Variables -- */
 
@@ -37,7 +38,7 @@
 
 	#homeSponsorsText {
 	    text-align: center;
-	    font-size: 2em;
+	    font-size: var(--home-font-size);
 	    opacity: 0.5;
 	    margin-top: 10px;
 	}
@@ -61,30 +62,30 @@
 	#createClientBtn {
 	    margin-bottom: 10px;
 	    margin-top: 10px;
-	    font-size: 2em;
+	    font-size: var(--home-font-size);
 	}
 
 	#createSalesOutletBtn {
-	    font-size: 2em;
+	    font-size: var(--home-font-size);
 	}
 	
 	#orText {
 	    text-align: center;
 	    opacity: 0.5;
 	    margin-top: 10px;
-	    font-size: 2em;
+	    font-size: var(--home-font-size);
 	}
 
 	#goToContentBtn {
     	margin-left: calc(50vw - 50px);
 	    margin-bottom: 8vh;
 	    margin-top: 1vh;
-	    font-size: 2em;
+	    font-size: var(--home-font-size);
 	}
 
 	#homeUserInput {
 	    height: calc(var(--input-width)/9);
-	    font-size: 2em;
+	    font-size: var(--home-font-size);
 	}
 
 /* IDs -- */

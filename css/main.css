@@ -3,12 +3,14 @@
     --main-color: blue;
     /* progress bar variables -- ++ -- */
         --progress-bar-progress: 66%;
+        --progress-bar-height: 50px;
+        --competition-item-progress-bar-height: 25px;
     /* progress bar variables -- */
-    --progress-bar-height: 50px;
 }
 /* Variables -- */
 
 /* Tags -- ++ -- */
+
     html {
     	position: relative;
     	min-height: 100vh;
@@ -41,6 +43,14 @@
         opacity: 0.7;
     }
 
+    ul ul a {
+        color: initial;
+    }
+
+    ul ul ul a {
+        color: initial;
+    }
+
     ul {
         list-style: decimal;
         color: var(--main-color);
@@ -58,83 +68,133 @@
         font-weight: 500;
     }
 
+
 /* Tags -- */
 
 /* IDs -- ++ --*/
-    #informationContainer {
-        margin-top: 200px;
-        margin-bottom: 250px;
-    }
 
-    #secondFooterLogo {
-    	left: 130px;
-    }
+        #informationContainer {
+            margin-top: 200px;
+            margin-bottom: 250px;
+        }
 
-    #clientAccountForm {
+        #secondFooterLogo {
+        	left: 130px;
+        }
 
-    }
+        #clientAccountForm {
 
-    #goBackButton {
-        font-size: 1rem;
-        position: absolute;
-        top: 125px;
-        left: 80px;
-    }
+        }
 
-    #goToContentBtn {
-        margin-left: calc(50vw - 50px);
-        margin-top: 1vh;
-        margin-bottom: 8vh;
-    }
+        #goBackButton {
+            font-size: 1rem;
+            position: absolute;
+            top: 125px;
+            left: 80px;
+        }
+
+        #goToContentBtn {
+            margin-left: calc(50vw - 50px);
+            margin-top: 1vh;
+            margin-bottom: 8vh;
+        }
+
     /* Competition */
-    #contentRow {
+        #contentRow {
 
-    }
+        }
 
-    #contentCol {
-        background-color: rgba(25, 156, 228, 0.13);
-    }
+        #contentCol {
+            background-color: rgba(25, 156, 228, 0.13);
+        }
 
-    #lastParagraph {
-        font-weight: bold;
-    }
+        #lastParagraph {
+            font-weight: bold;
+        }
 
-    #scoreRowBoldText {
-        font-weight: bold;
-    }
+        #scoreRowBoldText {
+            font-weight: bold;
+        }
 
-    #scoreRow {
-        font-size: small;
-        padding-top: 20px;
-    }
+        #scoreRow {
+            font-size: small;
+            padding-top: 20px;
+        }
 
     /* Progress Bars -- ++ -- */
-    
-    #progressBar1 {
-        width: var(--progress-bar-progress);
+        
+        #progressBar1 {
+            width: var(--progress-bar-progress);
+            height: var(--progress-bar-height);
+        }
+
+        #score-indicator-number {
+            position: absolute;
+            color: #0275d8;
+            font-size: xx-large;
+            left: calc(var(--progress-bar-progress) - 20px);
+            z-index: 10;
+            top: 60px;
+        }
+        
+        #scoreNumberLine {
+            position: absolute;
+            background-color: #f0ad4e;
+            border: dotted;
+            border-width: 1px;
+            border-color: #f0ad4e;
+            width: 0px;
+            height: 125%;
+            left: var(--progress-bar-progress);
+            top: -12.5%;
+        }
+    /* Progress Bars -- */
+
+    /* Description Item Progress Bars -- ++ -- */
+
+        /* percentage = (score*100)/maxScore */
+
+        #description-item-progressbar-1 {
+            width: 66%;
+        }
+
+        #description-item-progressbar-2 {
+            width: 60%;
+        }
+
+        #description-item-progressbar-3 {
+            width: 60%;
+        }
+
+        #description-item-progressbar-4 {
+            width: 60%;
+        }
+
+        #description-item-progressbar-5 {
+            width: 66%;
+        }
+
+        #description-item-progressbar-6 {
+            width: 66%;
+        }
+
+    /* Description Item Progress Bars -- */
+
+/* competidor description -- ++ -- */
+
+    #primerCompetidorTitle {
+        background-color: #0078c0;
+        border: #0078c0;
+        padding: 5px 5px 5px 20px;
+        color: white;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 70px;
+        margin-bottom: 60px;
     }
 
-    #score-indicator-number {
-        position: absolute;
-        color: #0275d8;
-        font-size: xx-large;
-        left: calc(var(--progress-bar-progress) - 20px);
-        z-index: 10;
-        top: 60px;
-    }
-    
-    #scoreNumberLine {
-        position: absolute;
-        background-color: #f0ad4e;
-        border: dotted;
-        border-width: 1px;
-        border-color: #f0ad4e;
-        width: 0px;
-        height: 125%;
-        left: var(--progress-bar-progress);
-        top: -12.5%;
-    }
-    /* Progress Bars -- */
+/* competidor description -- */
+
 /* IDs --*/
 
 /* classes -- ++ --*/
@@ -208,8 +268,8 @@
         padding-left: 1px;
     }
 
-    .progress-bar {
-        height: var(--progress-bar-height);
+    .competitionItemProgress-bar {
+        height: var(--competition-item-progress-bar-height);
     }
 
     .progressbar-line {
@@ -242,6 +302,65 @@
     .progress {
         overflow: unset;
     }
+
+/* competidor description -- ++ -- */
+
+    .square-guide {
+        /*border: solid;*/
+    }
+
+    .description-item-title {
+        font-size: 1.5em;
+        font-weight: 400;
+        margin: 20px 0px 5px 0px;
+    }
+
+/* Description Item Progress Bar -- ++ -- */
+
+    .description-item-progressbar {
+        height: var(--competition-item-progress-bar-height);
+    }
+
+/* Description Item Progress Bar -- */
+    .description-item-progressbar-white-lines-div {
+        position: absolute;
+        width: 100%;
+        height: var(--competition-item-progress-bar-height);
+        padding-right: 30px;
+        top: 0px;
+    }
+
+    .description-item-progressbar-line {
+        position: absolute;
+        width: 2px;
+        height: var(--competition-item-progress-bar-height);
+        background-color: orange;
+    }
+
+    .description-item-progress-bar-score-number {
+        color: var(--main-color);
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+        padding-right: 100px;
+    }
+
+    .description-item-progressbar-col {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border: solid;
+        border-color: orange;
+        border-width: 2px;
+    }
+
+    .description-item-progress-bar-score-number-div {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+/* competidor description -- */
 /* classes --*/
 
 /* Rules -- ++ --*/
@@ -261,4 +380,6 @@
             font-size: 1em;
         }
     }
+
+
 /* Rules --*/
