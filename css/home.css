@@ -88,6 +88,16 @@
 	    font-size: var(--home-font-size);
 	}
 
+	#sponsorsRowImgLeft {
+		text-align: right;
+		padding: 0px 10px 0px 0px;
+	}
+
+	#sponsorsRowImgRight {
+		text-align: left;
+		padding: 0px 0px 0px 10px;
+	}
+
 /* IDs -- */
 
 /* classes -- ++ -- */
@@ -105,10 +115,11 @@
 	.sponsor-img {
 	    height: inherit;
 	}
+
 	.sponsor-img-div {
 		text-align: center;
 	    width: 50%;
-	    height: 10vw;
+	    height: 5vw;
 	}
 /* classes -- */
 

@@ -1,10 +1,14 @@
 /* Variables -- ++ -- */ 
 :root {
-    --main-color: blue;
+    --main-color: #0078c0;
     /* progress bar variables -- ++ -- */
         --progress-bar-progress: 66%;
         --progress-bar-height: 50px;
         --competition-item-progress-bar-height: 25px;
+        /*section a -- ++ --*/
+            --section-a-progress-bar-progress: 66%;
+            --section-a-score-number-color: #54c5f1;
+        /*section a -- */
     /* progress bar variables -- */
 }
 /* Variables -- */
@@ -66,6 +70,10 @@
         list-style: decimal;
         list-style: decimal;
         font-weight: 500;
+    }
+
+    p {
+        text-align: justify;
     }
 
 
@@ -180,20 +188,131 @@
 
     /* Description Item Progress Bars -- */
 
-/* competidor description -- ++ -- */
+    /* competidor description -- ++ -- */
 
-    #primerCompetidorTitle {
-        background-color: #0078c0;
-        border: #0078c0;
-        padding: 5px 5px 5px 20px;
-        color: white;
-        font-size: 2em;
-        font-weight: bold;
-        margin-top: 70px;
-        margin-bottom: 60px;
-    }
+        #primerCompetidorTitle {
+            background-color: #0078c0;
+            border: #0078c0;
+            padding: 5px 5px 5px 20px;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 70px;
+            margin-bottom: 60px;
+        }
 
-/* competidor description -- */
+    /* competidor description -- */
+
+    /* sectionA -- ++ -- */
+
+        #sectionATitle {
+            display: -webkit-inline-box;
+            margin-top: 100px;
+        }
+
+        #sectionATitleTitleText {
+            font-size: 2em;
+            line-height: 70px;
+            color: var(--main-color);
+            font-weight: 600;
+            padding: 0px 0px 0px 10px;
+        }
+
+        #sectionAScoreIndicatorNumber {
+            position: absolute;
+            color: var(--section-a-score-number-color);
+            font-size: xx-large;
+            left: calc(var(--progress-bar-progress) - 20px);
+            z-index: 10;
+            top: 60px;
+        }
+
+        #sectionAScoreNumberLine {
+            position: absolute;
+            background-color: var(--section-a-score-number-color);
+            border: dotted;
+            border-width: 1px;
+            border-color: var(--section-a-score-number-color);
+            width: 0px;
+            height: 125%;
+            left: var(--progress-bar-progress);
+            top: -12.5%;
+        }
+
+        #sectionAProgressBar {
+            width: var(--section-a-progress-bar-progress);
+            height: var(--progress-bar-height);
+            background-color: var(--section-a-score-number-color);
+        }
+
+        #sectorAProgressBar {
+            margin-top: 50px;
+        }
+
+    /* sectionA -- */
+
+    /* section B -- ++ -- */
+
+        #sectionB {
+            display: -webkit-inline-box;
+            margin-top: 100px;
+        }
+
+        #sectionBTitleText {
+            font-size: 2em;
+            line-height: 70px;
+            color: var(--main-color);
+            font-weight: 600;
+            padding: 0px 0px 0px 10px;
+        }
+
+        #sectionBScoreIndicatorNumber {
+            position: absolute;
+            color: var(--section-a-score-number-color);
+            font-size: xx-large;
+            left: calc(var(--progress-bar-progress) - 20px);
+            z-index: 10;
+            top: 60px;
+        }
+
+        #sectionBScoreNumberLine {
+            position: absolute;
+            background-color: var(--section-a-score-number-color);
+            border: dotted;
+            border-width: 1px;
+            border-color: var(--section-a-score-number-color);
+            width: 0px;
+            height: 125%;
+            left: var(--progress-bar-progress);
+            top: -12.5%;
+        }
+
+        #sectionBProgressBar {
+            width: var(--section-a-progress-bar-progress);
+            height: var(--progress-bar-height);
+            background-color: var(--section-a-score-number-color);
+        }
+
+        #sectorBProgressBar {
+            margin-top: 50px;
+        }
+
+        /* Section B Map -- ++ -- */
+
+        #sectorBMapSquare {
+            background-color: #f0ad4e;
+            padding: 15px;
+        }
+
+        /* Section B Map -- */
+
+    /* section B -- */
+
+    /* section C -- ++ -- */
+        #sectionCText {
+            margin-top: 50px;
+        }
+    /* section C -- */
 
 /* IDs --*/
 
@@ -361,6 +480,34 @@
     }
 
 /* competidor description -- */
+
+    .section {
+        display: -webkit-inline-box;
+        margin-top: 100px;
+    }
+
+    /* sections -- ++ -- */
+
+        .sectionTitleText {
+            font-size: 2em;
+            line-height: 70px;
+            color: var(--main-color);
+            font-weight: 600;
+            padding: 0px 0px 0px 10px;    
+        }
+
+        .dividerHR {
+            margin-top: 5rem;
+        }
+    
+    /* sections -- */
+
+    /* section C -- ++ -- */
+
+
+
+    /* section C -- */
+
 /* classes --*/
 
 /* Rules -- ++ --*/
