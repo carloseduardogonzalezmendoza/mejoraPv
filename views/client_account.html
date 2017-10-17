@@ -4,6 +4,7 @@
 	<title>Cuenta Cliente</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<meta charset="utf-8">
 </head>
 
 <body>
@@ -11,9 +12,10 @@
 	<div class="header">
 		<div class="header-bg"></div>
 		<span>Cuenta Cliente</span>
-		<a href="home.html">
+		<a href="../home.html">
 			<span id="goBackButton">Volver al inicio</span>
 		</a>
+		<button onclick="scrollToTop()" class="btn btn-info" id="fixedGoBackButton" style="display: none;">Volver al inicio</button>
 		<div class="headerYellowLine"></div>
 		<div class="header-store-icon">
 			<img src="../img/store_icon.PNG">
@@ -27,7 +29,7 @@
 		<form id="clientAccountForm" class="row side-margins-5">
 		  <div id="nombreComercialDiv" class="form-group col-sm-12">
 		    <label for="nombreComercial">Nombre Comercial</label>
-		    <input class="form-control blue-form" id="nombreComercial" placeholder="nombre comercial ...">
+		    <input name="nombre_comercial" type="text" class="form-control blue-form" id="nombreComercial" placeholder="nombre comercial ...">
 		  </div>
 		</form>
 	<!-- Nombre Comercial -- -->
@@ -35,7 +37,7 @@
 		<form id="clientAccountForm1" class="row side-margins-5">
 		  <div id="razonSocialDiv" class="form-group col-sm-12">
 		    <label for="razonSocial">Razon Social</label>
-		    <input class="form-control blue-form" id="razonSocial" placeholder="razon social ...">
+		    <input name="razon_social" type="text" class="form-control blue-form" id="razonSocial" placeholder="razon social ...">
 		  </div>
 		</form>
 	<!-- Razon Social -- -->
@@ -44,19 +46,19 @@
 		<!-- cIFCIF -- ++ -- -->
 		 	<div id="cIFCIFDiv" class="form-group col-sm-5">
 		    	<label for="cIFCIF">CIF/NIF (letra-Números sin espacios)</label>
-		    	<input class="form-control blue-form" id="cIFCIF" placeholder="CIF/NIF ...">
+		    	<input name="cifcif" type="text" class="form-control blue-form" id="cIFCIF" placeholder="CIF/NIF ...">
 			</div>
 		<!-- cIFCIF -- -->
 		<!-- Poblacion -- ++ -- -->
 			<div id="PoblacionDiv" class="form-group col-sm-5">
-				<label for="domicilio">Poblacion</label>
-				<input class="form-control blue-form" id="domicilio" placeholder="domicilio ...">
+				<label for="poblacion">Población</label>
+				<input name="poblacion" type="text" class="form-control blue-form" id="poblacion" placeholder="población ...">
 			</div>
 		<!-- Poblacion -- -->
 		<!-- CP -- ++ -- -->
-			<div id="PoblacionDiv" class="form-group col-sm-2">
-				<label for="domicilio">CP</label>
-				<input class="form-control blue-form" id="domicilio" placeholder="CP ...">
+			<div id="cpDiv" class="form-group col-sm-2">
+				<label for="cp">CP</label>
+				<input name="cp" type="text" class="form-control blue-form" id="cp" placeholder="CP ...">
 			</div>
 		<!-- CP -- -->
 		</form>
@@ -65,7 +67,7 @@
 		<form id="clientAccountForm3" class="row side-margins-5">
 		  <div id="emailDiv" class="form-group col-sm-12">
 		    <label for="email">Email</label>
-		    <input class="form-control blue-form" id="email" placeholder="email ...">
+		    <input name="email" type="email" class="form-control blue-form" id="email" placeholder="email ...">
 		  </div>
 		</form>
 	<!-- Email -- -->
@@ -73,7 +75,7 @@
 		<form id="clientAccountForm3" class="row side-margins-5">
 		  <div id="nombrePropetarioDiv" class="form-group col-sm-12">
 		    <label for="nombrePropetario">Nombre Propetario</label>
-		    <input class="form-control blue-form" id="nombrePropetario" placeholder="nombre propetario ...">
+		    <input name="nombre_propetario" type="text" class="form-control blue-form" id="nombrePropetario" placeholder="nombre propetario ...">
 		  </div>
 		</form>
 	<!-- Nombre Propetario -- -->
@@ -82,41 +84,41 @@
 		<!-- Sector Actividad -- ++ -- -->
 		 	<div id="sectorActividadDiv" class="form-group col-sm-3">
 		    	<label for="sectorActividad">Sector Actividad</label>
-		    	<input class="form-control blue-form" id="sectorActividad" placeholder="Sector Actividad">
+		    	<input name="sector_actividad" type="text" class="form-control blue-form" id="sectorActividad" placeholder="Sector Actividad">
 			</div>
 		<!-- sectorActividad -- -->
 		<!-- Año de Inicio de Actividad -- ++ -- -->
 			<div id="añoInicioActividadDiv" class="form-group col-sm-3">
-				<label for="añoInicioActividad">Año de Inicio de Actividad</label>
-				<input class="form-control blue-form" id="añoInicioActividad" placeholder="año de inicio de actividad ...">
+				<label for="annoDeInicioDeActividad">Año de Inicio de Actividad</label>
+				<input name="anno_de_inicio_de_actividad" type="number" class="form-control blue-form" id="annoDeInicioDeActividad" placeholder="año de inicio de actividad ...">
 			</div>
 		<!-- Año de Inicio de Actividad -- -->
 		<!-- Numero de Empleados -- ++ -- -->
 			<div id="numeroDeEmpleadosDiv" class="form-group col-sm-3">
 				<label for="numeroDeEmpleados">Numero de Empleados</label>
-				<input class="form-control blue-form" id="numeroDeEmpleados" placeholder="numero de empleados ...">
+				<input name="numero_de_empleados" type="number" class="form-control blue-form" id="numeroDeEmpleados" placeholder="numero de empleados ...">
 			</div>
 		<!-- Numero de Empleados -- -->
 		<!-- ingreso Anual -- ++ -- -->
 			<div id="ingresoAnualDiv" class="form-group col-sm-3">
 				<label for="ingresoAnual">Ingreso Anual</label>
-				<input class="form-control blue-form" id="ingresoAnual" placeholder="ingreso anual ...">
+				<input name="ingreso_annual" type="number" class="form-control blue-form" id="ingresoAnual" placeholder="ingreso anual ...">
 			</div>
 		<!-- ingreso Anual -- -->
 		</form>
 	<!-- Row 5 -- -->
 	<!-- Row 6 -- ++ -- -->
 		<form id="clientAccountForm4" class="row side-margins-5">
-		<!-- Margen producción o EBITDA (Ventas-Costes totales/Ventas) -- ++ -- -->
+		<!-- Margen de producción o EBITDA (Ventas-Costes totales/Ventas) -- ++ -- -->
 		 	<div id="margenProduccionOEBITDADiv" class="form-group col-sm-6">
-		    	<label for="margenProduccionOEBITDA">Margen producción o EBITDA (Ventas-Costes totales/Ventas)</label>
-		    	<input class="form-control blue-form" id="margenProduccionOEBITDA" placeholder="Margen producción o EBITDA (Ventas-Costes totales/Ventas) ...">
+		    	<label for="margenDeProduccionOEBITDA">Margen producción o EBITDA (Ventas-Costes totales/Ventas)</label>
+		    	<input name="margen_de_produccion_o_ebitdad" type="number" class="form-control blue-form" id="margenDeProduccionOEBITDA" placeholder="Margen de producción o EBITDA (Ventas-Costes totales/Ventas) ...">
 			</div>
-		<!-- Margen producción o EBITDA (Ventas-Costes totales/Ventas) -- -->
-		<!-- Ratio Rentabilidad neta (BDIT/Ventas) -- ++ -- -->
-			<div id="ratioRentabilidadNetaDiv" class="form-group col-sm-6">
-				<label for="ratioRentabilidadNeta">Ratio Rentabilidad Neta</label>
-				<input class="form-control blue-form" id="ratioRentabilidadNeta" placeholder="ratio rentabilidad neta ...">
+		<!-- Margen de producción o EBITDA (Ventas-Costes totales/Ventas) -- -->
+		<!-- Ratio de Rentabilidad neta (BDIT/Ventas) -- ++ -- -->
+			<div id="ratioDeRentabilidadNetaDiv" class="form-group col-sm-6">
+				<label for="ratioDeRentabilidadNeta">Ratio Rentabilidad Neta</label>
+				<input name="ratio_de_rentabilidad_neta" type="number" class="form-control blue-form" id="ratioDeRentabilidadNeta" placeholder="ratio rentabilidad neta ...">
 			</div>
 		<!-- Ratio Rentabilidad neta (BDIT/Ventas) -- -->
 		</form>
@@ -126,21 +128,21 @@
 		<!-- nombreMejorador -- ++ -- -->
 		 	<div id="nombreMejoradorDiv" class="form-group col-sm-6">
 		    	<label for="nombreMejorador">Nombre de Mejorador</label>
-		    	<input class="form-control blue-form" id="nombreMejorador" placeholder="nombre de mejorador ...">
+		    	<input name="nombre_mejorador" type="text" class="form-control blue-form" id="nombreMejorador" placeholder="nombre de mejorador ...">
 			</div>
 		<!-- nombreMejorador -- -->
 		<!-- usuario De Mejora PV Desde -- ++ -- -->
 			<div id="usuarioDeMejoraPVDesdeDiv" class="form-group col-sm-6">
 				<label for="usuarioDeMejoraPVDesde">Usuario de Mejora PV desde</label>
-				<input class="form-control blue-form" id="usuarioDeMejoraPVDesde" placeholder="usuario de mejora PV desde ...">
+				<input name="usuario_de_mejora_pv_desde" type="date" class="form-control blue-form" id="usuarioDeMejoraPVDesde" placeholder="usuario de mejora PV desde ...">
 			</div>
 		<!-- usuario De Mejora PV Desde -- -->
 		</form>
 	<!-- Row 7 -- -->
 	<!-- Go to content button -- ++ -- -->
-		<form action="index.html">
+		<form action="content_table.html" class="goToContentBtn">
 			<button id="goToContentBtn" type="submit" class="btn btn-success" >
-				Ir al indice
+				Ir a la tabla de contenido
 			</button>
 		</form>
 	<!-- Go to content button -- -->
@@ -157,6 +159,14 @@
 		<div class="headerYellowLine bottom"></div>
 	</footer>
 <!-- footer -- -->
+
+<!-- scripts -- ++ -- -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="../js/main.js" type="text/javascript"></script>
+<!-- scripts ---->
+
 </body>
 
 </html>

@@ -10,6 +10,11 @@
             --section-a-score-number-color: #54c5f1;
         /*section a -- */
     /* progress bar variables -- */
+    --opacity-transition-time: 1s;
+    /* analisis del establecimiento -- ++ -- */
+        --analisis-del-establecimiento-progress-bar-progress: 66%;
+        --analisis-del-establecimiento-section-a-score-number-color: orange;
+    /* analisis del establecimiento -- */
 }
 /* Variables -- */
 
@@ -76,6 +81,10 @@
         text-align: justify;
     }
 
+    nav div a img {
+        height: 55px;
+    }
+
 
 /* Tags -- */
 
@@ -101,8 +110,18 @@
             left: 80px;
         }
 
+        #fixedGoBackButton {
+            font-size: 1rem;
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+            position: fixed;
+            z-index: 10;
+            opacity: 0;
+            transition: opacity var(--opacity-transition-time);
+        }
+
         #goToContentBtn {
-            margin-left: calc(50vw - 50px);
             margin-top: 1vh;
             margin-bottom: 8vh;
         }
@@ -190,16 +209,7 @@
 
     /* competidor description -- ++ -- */
 
-        #primerCompetidorTitle {
-            background-color: #0078c0;
-            border: #0078c0;
-            padding: 5px 5px 5px 20px;
-            color: white;
-            font-size: 2em;
-            font-weight: bold;
-            margin-top: 70px;
-            margin-bottom: 60px;
-        }
+
 
     /* competidor description -- */
 
@@ -287,12 +297,6 @@
             top: -12.5%;
         }
 
-        #sectionBProgressBar {
-            width: var(--section-a-progress-bar-progress);
-            height: var(--progress-bar-height);
-            background-color: var(--section-a-score-number-color);
-        }
-
         #sectorBProgressBar {
             margin-top: 50px;
         }
@@ -302,6 +306,7 @@
         #sectorBMapSquare {
             background-color: #f0ad4e;
             padding: 15px;
+            height: 500px;
         }
 
         /* Section B Map -- */
@@ -309,10 +314,248 @@
     /* section B -- */
 
     /* section C -- ++ -- */
+
         #sectionCText {
             margin-top: 50px;
         }
+
     /* section C -- */
+
+
+    /* competition comparative analisis -- ++ -- */
+
+        /* competition comparative analisis items -- ++ -- */
+
+            #competition-comparative-analisis-item-1 {
+                width: 66%;
+            }
+
+            #competition-comparative-analisis-item-2 {
+                width: 60%;
+            }
+
+            #competition-comparative-analisis-item-3 {
+                width: 60%;
+            }
+
+            #competition-comparative-analisis-item-4 {
+                width: 60%;
+            }
+
+            #competition-comparative-analisis-item-5 {
+                width: 66%;
+            }
+
+        /* competition comparative analisis items -- */
+
+    /* competition comparative analisis -- */
+
+    /* primer competidor -- ++ -- */
+
+        #primerCompetidorDiv {
+            /*background-color: pink;*/
+        }
+
+    /* primer competidor -- */
+
+    /* segundo competidor -- ++ -- */
+
+        #segundoCompetidorDiv {
+            /*background-color: aliceblue;*/
+        }
+
+        /* percentage = (score*100)/maxScore */
+
+            #description-item-progressbar-2-1 {
+                width: 66%;
+            }
+
+            #description-item-progressbar-2-2 {
+                width: 60%;
+            }
+
+            #description-item-progressbar-2-3 {
+                width: 60%;
+            }
+
+            #description-item-progressbar-2-4 {
+                width: 60%;
+            }
+
+            #description-item-progressbar-2-5 {
+                width: 66%;
+            }
+
+            #description-item-progressbar-2-6 {
+                width: 66%;
+            }
+
+        /* Description Item Progress Bars -- */
+
+            /* competition comparative analisis -- ++ -- */
+
+        /* competition comparative analisis items -- ++ -- */
+
+            #competition-comparative-analisis-item-2-1 {
+                width: 66%;
+            }
+
+            #competition-comparative-analisis-item-2-2 {
+                width: 60%;
+            }
+
+            #competition-comparative-analisis-item-2-3 {
+                width: 60%;
+            }
+
+            #competition-comparative-analisis-item-2-4 {
+                width: 60%;
+            }
+
+            #competition-comparative-analisis-item-2-5 {
+                width: 66%;
+            }
+
+        /* competition comparative analisis items -- */
+
+    /* competition comparative analisis -- */
+
+    /* segundo competidor -- */
+
+    #competition-navbar {
+        transition: opacity var(--opacity-transition-time);
+        background-color: var(--main-color)
+    }
+
+    .navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
+        color: var(--section-a-score-number-color);
+    }
+
+    .navbar-inverse .navbar-nav .nav-link {
+        color: var(--main-color) !important;
+        font-size: small;
+        text-overflow: ellipsis;
+        background: aliceblue;
+        margin: 2px;
+    }
+
+    #competition-navbar {
+        transition: opacity var(--opacity-transition-time);
+        background-image: url(../img/blue-polygonal-background-with-triangles.jpg);
+    }
+
+    /* analisis del establecimiento */
+
+        /* percentage = (score*100)/5 */
+
+        #analisisDelEstablecimientoProgressBar1 {
+            width: 66%;
+        }
+
+        /* desription item progressbar -- ++ -- */
+
+            #analisis_del_establecimiento_description-item-progressbar-1 {
+            width: 67.4%;
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-2 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-3 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-4 {
+                width: 61.8%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-5 {
+                width: 61.8%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-6 {
+                width: 61.8%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-7 {
+                width: 68.1%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-8 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-9 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-10 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-11 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-12 {
+                width: 68.1%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-13 {
+                width: 68.1%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-14 {
+                width: 68.1%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-15 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-16 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-17 {
+                width: 67.4%
+            }
+
+            #analisis_del_establecimiento_description-item-progressbar-18 {
+                width: 68.1%
+            }
+
+        /* desription item progressbar -- */
+
+        #analisisDelEstablecimientoSectionAProgressBar {
+            width: var(--analisis-del-establecimiento-progress-bar-progress);
+            background-color: orange;
+            height: var(--competition-item-progress-bar-height);
+        }
+
+        #analisisDelEstablecimeintoSectionAScoreNumberLine {
+            position: absolute;
+            background-color: orange;
+            border: dotted;
+            border-width: 1px;
+            border-color: var(--analisis-del-establecimiento-section-a-score-number-color);
+            width: 0px;
+            height: 125%;
+            left: var(--analisis-del-establecimiento-progress-bar-progress);
+            top: -12.5%;
+        }
+
+        #analisisDelEstabecimientoSectionAScoreIndicatorNumber {
+            position: absolute;
+            color: var(--section-a-score-number-color);
+            font-size: xx-large;
+            left: calc(var(--analisis-del-establecimiento-progress-bar-progress) - 20px);
+            z-index: 10;
+            top: 60px;
+        }
+
+    /* analisis del establecimiento */
 
 /* IDs --*/
 
@@ -380,6 +623,10 @@
         position: absolute;
         top: 35px;
         left: 75px;
+    }
+
+    .goToContentBtn {
+        text-align: center;
     }
 
     .progress-bar-slice {
@@ -508,25 +755,49 @@
 
     /* section C -- */
 
+    /* section D -- ++ -- */
+        
+        .competitorImgButton {
+            text-align: center;
+            margin: 10px 0px 50px 0px;
+        }
+
+        .competitorImgsImg {
+            padding: 10px 10px 0px 10px;
+            width: inherit;
+        }
+
+        .competitorImgsImgDiv {
+            text-align: center;
+        }
+
+    /* section D -- */
+
+    /* competidor description -- ++ -- */
+
+        .blue_background_title {
+            background-color: #0078c0;
+            border: #0078c0;
+            padding: 5px 5px 5px 20px;
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 70px;
+            margin-bottom: 60px;
+        }
+
+    /* competidor description -- */
+
+    .navbar-inverse .navbar-nav .nav-link {
+        color: rgba(255,255,255,.5);
+        font-size: small;
+    }
+
+
+
 /* classes --*/
 
 /* Rules -- ++ --*/
-    @media only screen and (max-width: 750px) {
-        .header span {
-            font-size: 2rem;
-            top: 50px;
-            left: 10vw;
-        }
-    }
-
-    @media (max-width: 414px) {
-        #informationContainer {
-            font-size: 2em;
-        }
-        #scoreRow {
-            font-size: 1em;
-        }
-    }
 
 
 /* Rules --*/

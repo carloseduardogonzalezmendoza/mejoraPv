@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Competencia</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<meta charset="utf-8">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- Header -- ++ -- -->
+	<div class="header">
+		<div class="header-bg"></div>
+		<span>Competencia</span>
+		<a href="../home.html">
+			<span id="goBackButton">Volver al inicio</span>
+		</a>
+		<button onclick="scrollToTop()" class="btn btn-info" id="fixedGoBackButton">Volver al inicio</button>
+		<div class="headerYellowLine"></div>
+		<div class="header-store-icon">
+			<img src="../img/competition.png">
+		</div>
+	</div>
+<!-- Header -- -->
+<!-- navbar -- ++ -- -->
+	<nav onclick="competitionNavbar.style.opacity = 0" id="competition-navbar" class="navbar navbar-toggleable-md fixed-top navbar-light navbar-inverse" style="opacity: 0">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#competitionNavbarToggler" aria-controls="competitionNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		 </button>
+		 <div class="collapse navbar-collapse" id="competitionNavbarToggler">
+		 	<a class="navbar-brand" href="../home.html">
+		 		<img src="../img/mejora_pv.png">
+		 	</a>
+			<!-- First Competitor -- ++ -- -->
+				<ul id="firstCompetitorNavbarNav" class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item" id="SegundoCompetidorDivNavbarLink">
+						<a class="nav-link" href="#segundoCompetidorDiv">
+							Ir a el Segundo competidor
+						</a>
+					</li>
+					<li class="nav-item" id="primerCompetidorTitleNavbarLink">
+						<a class="nav-link" href="#primerCompetidorDiv">
+							Encuesta de Primer competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionNavbarLink">
+						<a class="nav-link" href="#EncuestaDePrimerCompetidor">
+							Indicador sintético de Primer competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionBNavbarLink">
+						<a class="nav-link" href="#sectionAProgressBar">
+							Mapa de Primer competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionCNavbarLink">
+						<a class="nav-link" href="#analisisDePrincipalCompetidor">
+							Análisis de Primer competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionDNavbarLink">
+						<a class="nav-link" href="#fotosDelPrincipalCompetidor">
+							Fotos de Primer competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionDNavbarLink">
+						<a class="nav-link" href="#comparativaDeLasEmpresasCompetidorasYElPuntoDeVentaTitleDiv">
+							Comparativa de las empresas competidoras y el punto de venta
+						</a>
+					</li>
+				</ul>
+			<!-- First Competitor -- -->
+			<!-- Second Competitor -- ++ -- -->
+				<ul id="secondCompetitorNavbarNav" class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item" id="primerCompetidorDivNavbarLink">
+						<a class="nav-link" href="#primerCompetidorDiv">
+							Ir a el Primer competidor
+						</a>
+					</li>
+					<li class="nav-item" id="SegundoCompetidorTitleNavbarLink">
+						<a class="nav-link" href="#segundoCompetidorDiv">
+							Encuesta de Segundo competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionNavbarLink">
+						<a class="nav-link" href="#indicadorSinteticoDelSegundoPrincipalCompetidor">
+							Indicador sintético de Segundo competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionBNavbarLink">
+						<a class="nav-link" href="#mapaDelSegundoCompetidor">
+							Mapa de Segundo competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionCNavbarLink">
+						<a class="nav-link" href="#analisisDelSegundoPrincipalCompetidor">
+							Análisis de Segundo competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionDNavbarLink">
+						<a class="nav-link" href="#fotosDelSegundoPrincipalCompetidor">
+							Fotos de Segundo competidor
+						</a>
+					</li>
+					<li class="nav-item" id="sectionDNavbarLink">
+						<a class="nav-link" href="#comparativaDeLasEmpresasCompetidorasYElPuntoDeVentaTitleDiv">
+							Comparativa de las empresas competidoras y el punto de venta
+						</a>
+					</li>
+				</ul>
+			<!-- Second Competitor -- -->
+		 </div>
+	</nav>
+<!-- navbar -- -->
+<!-- Information Container -- ++ -- -->
+	<div id="informationContainer" class="container-fluid">
+		<!-- First Competition Section -- ++ -- -->
+			<div id="firstCompetitionSection" style="display: unset;">
+				<div id="contentRow" class="row">
+					<dir class="col-sm-1"></dir>
+					<div id="contentCol" class="col-sm-10">
+						<p>
+							El análisis de la competencia es uno de los aspectos clave en el desarrollo de la estrategia
+							de posicionamiento de un negocio. En nuestro caso, la competencia se valora teniendo en
+							cuenta: la localización del comercio competidor, el cliente al que se dirige y la imagen que
+							proyecta. No entra a valorar otras cuestiones importantes como la dirección, la viabilidad
+							económica o la gestión del personal.
+						</p>
+						<p>
+							Itasimus ent. Dem qui bea que vendign iatiste sim que nos dolorectiate alibea im cuptusdam
+							expero optur suntur atibusda cus et estin nulpa dolut estia niscimet eum ea velitat pa voluptas
+							denisci enienda nditatia venis quo voluptae consene cullaces dis reriant eium volor simollorem
+							remporro ma volupta temolorest, ius ut aceptur? Ullabor rem. Imusdae ea quunt fuga. Et
+							volorem vellam qui cupis dolorate rehenime non parunt veliquis sit voluptur aut mo be..
+						</p>
+						<p>	
+							Ostiscius modic temporento evenis alis quam ventius.Xerum faccates desed que coreicat
+							labo. Et occaepre laut faccus aliqui aborporitem fuga. Dipsam de perfernat lam es sintiatur
+							molende llenime ese sequas ipiet as ea incient, ut quatem idelluptas veliqui atibus eatem
+							harcill amentisciae cupta consedi doluptatur as aut reicil mos aut expernati rehenis num
+							fugit erovitatur? Quis maxim diatemp elictet eatur? Nemodio nsedigeniet eatibus volentia es
+							eario. Fici bearchi lisquiae molum aut qui.
+						</p>
+						<p id="lastParagraph">
+							1.500 CARACTERES CON ESPACIOS
+						</p>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div id="scoreRow" class="col-sm-10">
+						<p>
+							<span id="scoreRowBoldText">IS competencia PV</span><span>= IS primer competidor PV + IS segundo competidor PV</span>
+						</p>
+					</div>
+					<div class="col-sm-1"></div>
+				</div>
+				<!-- Progress Bar -- ++ -- -->
+					<div class="row">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-10 progress-bar-slice">
+							<div class="progress">
+							<!-- Score Indicator Number -- ++ -- -->
+								<div>
+									<div id="score-indicator-number">
+										3.3
+									</div>
+									<div id="scoreNumberLine"></div>
+								</div>
+							<!-- Score Indicator Number -- -->
+						  		<div id="progressBar1" class="progress-bar bg-warning" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+							</div>
+						</div>
+						<div class="progressbar-line line-1"></div>
+						<div class="progressbar-line line-2"></div>
+						<div class="progressbar-line line-3"></div>
+						<div class="progressbar-line line-4"></div>
+						<div class="col-sm-1"></div>
+					</div>
+				<!-- Progress Bar -- -->		
+			</div>
+		<!-- First Competition Section -- -->
+				<hr class="dividerHR" id="primerCompetidorDivHr">
+		<!-- Descripcion del primer competidor -- ++ -- -->
+			<div id="primerCompetidorDiv" class="row">
+				<div class="col-sm-1"></div>
+			<!-- Title 1 -->
+				<div id="primerCompetidorTitleDiv" class="col-sm-10">
+					<div id="primerCompetidorTitle" class="blue_background_title">
+						Descripción del primer competidor
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+			<!-- Title 1 -->
+			<!-- Description -- ++ -- -->
+				<div class="col-sm-1"></div>
+				<div class="competition-descripcion col-sm-10">
+				<!-- Description Items -- ++ -- -->
+					<!-- Description Item 1 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-1" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.3
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 1 -- -->
+					<!-- Description Item 2 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-2" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.0
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 2 -- -->
+					<!-- Description Item 3 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-3" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.0
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 3 -- -->
+					<!-- Description Item 4 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-4" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.0
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 4 -- -->
+					<!-- Description Item 5 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-5" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.3
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 5 -- -->
+					<!-- Description Item 6 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-6" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.3
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 6 -- -->
+				<!-- Description Items -- -->
+			<!-- Description -- -->
+			<!-- Indicador Sintetico principal competidor -- ++ -- -->
+				<!-- Seccion A -- ++ -- -->
+					<div id="EncuestaDePrimerCompetidor" style="display: unset;">
+						<div id="sectionATitle" class="section">
+							<div id="sectionATitleAIcon">
+								<img id="sectionATitleAIconImg" src="../img/a_circle_icon.png">
+							</div>
+							<div id="sectionATitleTitle">
+								<span id="sectionATitleTitleText" class="sectionTitleText">Indicador Sintético principal competidor</span>
+							</div>
+						</div>
+						<!-- Sector A Progress Bar -- ++ -- -->
+							<div id="sectorAProgressBar" class="row">
+								<div class="col-sm-1"></div>
+								<div class="col-sm-10 progress-bar-slice">
+									<div class="progress">
+									<!-- Score Indicator Number -- ++ -- -->
+										<div>
+											<div id="sectionAScoreIndicatorNumber">
+												3.3
+											</div>
+											<div id="sectionAScoreNumberLine"></div>
+										</div>
+									<!-- Score Indicator Number -- -->
+								  		<div id="sectionAProgressBar" class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="progressbar-line line-1"></div>
+								<div class="progressbar-line line-2"></div>
+								<div class="progressbar-line line-3"></div>
+								<div class="progressbar-line line-4"></div>
+								<div class="col-sm-1"></div>
+							</div>
+						<!-- Sector A Progress Bar -- -->
+					</div>
+				<!-- Seccion A -- -->
+			<!-- Indicador Sintetico principal competidor -- -->
+				<hr class="dividerHR" id="mapaDePrimerCompetidorHr">
+			<!-- Mapa de Primer competidor -- ++ -- -->
+				<div id="mapaDePrimerCompetidor" style="display: unset;">
+					<!-- Seccion B -- ++ -- -->
+						<div id="sectionB" class="section">
+							<div id="sectionBAIcon">
+								<img id="sectionBAIconImg" src="../img/b_circle_icon.png">
+							</div>
+							<div id="sectionBTitle">
+								<span id="sectionBTitleText" class="sectionTitleText">Mapa del principal competidor</span>
+							</div>
+						</div>
+						<!-- Secccion B Map -- ++ -- -->
+							<!-- Google Maps API key AIzaSyAFjXBEJHCfhK14LjBSxo3HW49_M9eqwJ8 -->
+							<!-- Google Maps API guide: https://developers.google.com/maps/documentation/embed/guide
+							Get API key here: https://developers.google.com/maps/documentation/embed/get-api-key -->
+							<div id="sectorBMap" class="row">
+								<div class="col-sm-2"></div>
+								<div id="sectorBMapSquare" class="col-sm-8">
+									<iframe
+									  width="720px"
+									  height="500px"
+									  frameborder="0" style="border: 0px; height: 100%; width: 100%;"
+									  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAFjXBEJHCfhK14LjBSxo3HW49_M9eqwJ8
+									    &q=Perfumeria+tin+tin,Illes+Balears+Spain" allowfullscreen>
+									</iframe>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+						<!-- Secccion B Map -- -->
+					<!-- Seccion B -- -->
+				</div>
+			<!-- Mapa de Primer competidor -- -->
+				<hr class="dividerHR" id="analisisDePrincipalCompetidorHr">
+			<!-- Análisis de principal competidor -- ++ -- -->
+					<div id="analisisDePrincipalCompetidor" style="display: unset;">
+						<!-- Seccion C -- ++ -- -->
+							<div id="sectionC" class="section">
+								<div id="sectionCIcon">
+									<img id="sectionCIconImg" src="../img/c_circle_icon.png">
+								</div>
+								<div id="sectionCTitle" class="sectionTitleText">
+									<span id="sectionCTitleText" class="sectionTitle">Análisis de principal competidor</span>
+								</div>
+							</div>
+							<div class="row" id="sectionCText">
+								<div class="col-sm-1"></div>
+								<div class="col-sm-10">
+									<p>
+										El primer competidor del punto de venta de Perfumes Tin Tin es el Corte Inglés, a escasos
+										minutos de la tienda analizada, con políticas de ventas agresivas y con asesoramiento sobre
+										sus productos.
+									</p>
+									<p>
+										También hace venta on-line, con servicio de entrega en domicilio o en tienda (con transporte
+										gratuito). Además, cuenta con una imagen corporativa bien identificada y campañas
+										de promoción importantes. Son habituales los descuentos en grandes marcas o regalos y
+										promociones exclusivas para sus clientes.
+									</p>
+									<p>
+										La imagen exterior está muy bien, es cuidada y cuenta con los últimos avances tecnológicos,
+										como una tele de grandes dimensiones en la fachada donde se promocionan los productos
+										de moda o temporada.
+									</p>
+									<p>
+										Los escaparates también están trabajados. Se cambian frecuentemente y siempre muestran
+										las últimas tendencias. La perfumería al estar abierta a la calle con cristaleras, ya supone
+										un auténtico escaparate. El pequeño desnivel desde la calle ayuda a ganar perspectiva en
+										la visión y dar una imagen de gran surtido de producto al cliente.
+										Todos los stands de marca están bien delimitados y atendidos por personal contratado por
+										la propia marca, muy profesional y conocedor de los últimos productos que han salido al
+										mercado.
+									</p>
+									<p>
+										Ficat audacep ortemo cuperio, nonfectus es inati, P. Tum dem.Serivid inticon sullaris porum
+										ca pubis, nostratiam inve, ocuperem ia ta, faciors senat, audemor la re, egit, quasdam que
+										conihic aucturo, vis actus, nost facessilne et fuit, ommoruncla viciori contum ducomaxima,
+										med reis. Issernu maio ines ortaber icultustemus cum hachus, sulude visside perebatus cupiemum,
+										omnenten sum manteat L. Qua vena, nihilicient. On se que intem ditebat raelintem
+										et; iam, cor in se peris hebus condelartum dercervidit, cla mentriciem inti, qui sed suam audemeri
+										postarius, consuamquem obsedis sentiamendi senatustrum auconscit; nocae consum
+										hus speribu nteremus, norteru menation suloctum hil habus.
+									</p>
+									<p id="lastParagraph">
+										1.900 CARACTERES CON ESPACIOS
+									</p>
+								</div>
+								<div class="col-sm-1"></div>
+							</div>
+						<!-- Seccion C -- -->
+					</div>
+			<!-- Análisis de principal competidor -- -->
+				<hr class="dividerHR" id="fotosDelPrincipalCompetidorHr">
+			<!-- Fotos del principal competidor -- ++ -- -->
+				<div id="fotosDelPrincipalCompetidor" style="display: unset;">
+					<!-- Seccion D -- ++ -- -->
+						<!-- Seccion D Title -- ++ -- -->
+							<div id="sectionD" class="section">
+								<div id="sectionDIcon">
+									<img id="sectionDIconImg" src="../img/d_circle_icon.png">
+								</div>
+								<div id="sectionDTitle" class="sectionTitleText">
+									<span id="sectionDTitleText" class="sectionTitle">Fotos del principal competidor</span>
+								</div>
+							</div>
+						<!-- Seccion D Title -- -->
+							<div id="competitorImgsDiv">
+								<div id="competidorImgsDivButtons" class="row">
+									<div id="plusCompetitorImgButtonDiv" class="col-sm-6 competitorImgButton">
+										<img src="../img/plus_icon.png">
+									</div>
+									<div id="competitorImgsDivMiddleLine"></div>
+									<div id="minusCompetitorImgButtonDiv" class="col-sm-6 competitorImgButton">
+										<img src="../img/minus_icon.png">
+									</div>
+								</div>
+								<div id="competitorImgsImgsDiv" class="row">
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+								</div>
+							</div>
+					<!-- Seccion D -- -->
+				</div>
+			<!-- Fotos del principal competidor -- -->
+				<hr class="dividerHR">
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		<!-- Descripcion del primer competidor -- -->
+
+
+
+		<!-- Descripcion del segundo competidor -- ++ -- -->
+			<div id="segundoCompetidorDiv" class="row">
+				<div class="col-sm-1"></div>
+			<!-- Title 1 -->
+				<div id="segundoCompetidorTitleDiv" class="col-sm-10">
+					<div id="segundoCompetidorTitle" class="blue_background_title">
+						Descripción del segundo competidor
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+			<!-- Title 1 -->
+			<!-- Description -- ++ -- -->
+				<div class="col-sm-1"></div>
+				<div class="competition-descripcion col-sm-10">
+				<!-- Description Items -- ++ -- -->
+					<!-- Description Item 1 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-2-1" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.3
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 1 -- -->
+					<!-- Description Item 2 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-2-2" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.0
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 2 -- -->
+					<!-- Description Item 3 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-2-3" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.0
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 3 -- -->
+					<!-- Description Item 4 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-2-4" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.0
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 4 -- -->
+					<!-- Description Item 5 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-2-5" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.3
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 5 -- -->
+					<!-- Description Item 6 -- ++ -- -->
+						<div class="description-item row">
+							<div class="description-item-title col-sm-12">
+								Localización del comercio
+							</div>
+						<!-- Description Item Progess Bar -- ++ -- -->
+							<div class="description-item-progressbar-col col-sm-10">
+								<div class="progress">
+							  		<div class="progress-bar description-item-progressbar" id="description-item-progressbar-2-6" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+								<div class="description-item-progressbar-white-lines-div">
+									<div class="description-item-progressbar-line line-1"></div>
+									<div class="description-item-progressbar-line line-2"></div>
+									<div class="description-item-progressbar-line line-3"></div>
+									<div class="description-item-progressbar-line line-4"></div>
+								</div>
+							</div>
+							<div class="description-item-progress-bar-score-number-div  col-sm-2">
+								<div class="description-item-progress-bar-score-number">
+									3.3
+								</div>
+							</div>
+						<!-- Description Item Progess Bar -- -->
+						</div>
+					<!-- Description Item 6 -- -->
+				<!-- Description Items -- -->
+			<!-- Description -- -->
+			<!-- Indicador Sintetico principal competidor -- ++ -- -->
+				<!-- Seccion A -- ++ -- -->
+					<div id="indicadorSinteticoDelSegundoPrincipalCompetidor" style="display: unset;">
+						<div id="sectionATitle" class="section">
+							<div id="sectionATitleAIcon">
+								<img id="sectionATitleAIconImg" src="../img/a_circle_icon.png">
+							</div>
+							<div id="sectionATitleTitle">
+								<span id="secondCompetitorsectionATitleTitleText" class="sectionTitleText">Indicador Sintético segundo principal competidor</span>
+							</div>
+						</div>
+						<!-- Sector A Progress Bar -- ++ -- -->
+							<div id="sectorAProgressBar" class="row">
+								<div class="col-sm-1"></div>
+								<div class="col-sm-10 progress-bar-slice">
+									<div class="progress">
+									<!-- Score Indicator Number -- ++ -- -->
+										<div>
+											<div id="sectionAScoreIndicatorNumber">
+												3.3
+											</div>
+											<div id="sectionAScoreNumberLine"></div>
+										</div>
+									<!-- Score Indicator Number -- -->
+								  		<div id="sectionAProgressBar" class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+								<div class="progressbar-line line-1"></div>
+								<div class="progressbar-line line-2"></div>
+								<div class="progressbar-line line-3"></div>
+								<div class="progressbar-line line-4"></div>
+								<div class="col-sm-1"></div>
+							</div>
+						<!-- Sector A Progress Bar -- -->
+					</div>
+				<!-- Seccion A -- -->
+			<!-- Indicador Sintetico principal competidor -- -->
+				<hr class="dividerHR">
+			<!-- Mapa de Primer competidor -- ++ -- -->
+				<div id="mapaDelSegundoCompetidor" style="display: unset;">
+					<!-- Seccion B -- ++ -- -->
+						<div id="sectionB" class="section">
+							<div id="sectionBAIcon">
+								<img id="sectionBAIconImg" src="../img/b_circle_icon.png">
+							</div>
+							<div id="sectionBTitle">
+								<span id="secondCompetitorSectionBTitleText" class="sectionTitleText">Mapa del segundo principal competidor</span>
+							</div>
+						</div>
+						<!-- Secccion B Map -- ++ -- -->
+							<!-- Google Maps API key AIzaSyAFjXBEJHCfhK14LjBSxo3HW49_M9eqwJ8 -->
+							<!-- Google Maps API guide: https://developers.google.com/maps/documentation/embed/guide
+							Get API key here: https://developers.google.com/maps/documentation/embed/get-api-key -->
+							<div id="sectorBMap" class="row">
+								<div class="col-sm-2"></div>
+								<div id="sectorBMapSquare" class="col-sm-8">
+									<iframe
+									  width="720px"
+									  height="500px"
+									  frameborder="0" style="border: 0px; height: 100%; width: 100%;"
+									  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAFjXBEJHCfhK14LjBSxo3HW49_M9eqwJ8
+									    &q=Perfumeria+tin+tin,Illes+Balears+Spain" allowfullscreen>
+									</iframe>
+								</div>
+								<div class="col-sm-2"></div>
+							</div>
+						<!-- Secccion B Map -- -->
+					<!-- Seccion B -- -->
+				</div>
+			<!-- Mapa de Primer competidor -- -->
+				<hr class="dividerHR">
+			<!-- Análisis de principal competidor -- ++ -- -->
+					<div id="analisisDelSegundoPrincipalCompetidor" style="display: unset;">
+						<!-- Seccion C -- ++ -- -->
+							<div id="sectionC" class="section">
+								<div id="sectionCIcon">
+									<img id="sectionCIconImg" src="../img/c_circle_icon.png">
+								</div>
+								<div id="sectionCTitle" class="sectionTitleText">
+									<span id="sectionCTitleText" class="sectionTitle">Análisis del Segundo principal competidor</span>
+								</div>
+							</div>
+							<div class="row" id="sectionCText">
+								<div class="col-sm-1"></div>
+								<div class="col-sm-10">
+									<p>
+										El primer competidor del punto de venta de Perfumes Tin Tin es el Corte Inglés, a escasos
+										minutos de la tienda analizada, con políticas de ventas agresivas y con asesoramiento sobre
+										sus productos.
+									</p>
+									<p>
+										También hace venta on-line, con servicio de entrega en domicilio o en tienda (con transporte
+										gratuito). Además, cuenta con una imagen corporativa bien identificada y campañas
+										de promoción importantes. Son habituales los descuentos en grandes marcas o regalos y
+										promociones exclusivas para sus clientes.
+									</p>
+									<p>
+										La imagen exterior está muy bien, es cuidada y cuenta con los últimos avances tecnológicos,
+										como una tele de grandes dimensiones en la fachada donde se promocionan los productos
+										de moda o temporada.
+									</p>
+									<p>
+										Los escaparates también están trabajados. Se cambian frecuentemente y siempre muestran
+										las últimas tendencias. La perfumería al estar abierta a la calle con cristaleras, ya supone
+										un auténtico escaparate. El pequeño desnivel desde la calle ayuda a ganar perspectiva en
+										la visión y dar una imagen de gran surtido de producto al cliente.
+										Todos los stands de marca están bien delimitados y atendidos por personal contratado por
+										la propia marca, muy profesional y conocedor de los últimos productos que han salido al
+										mercado.
+									</p>
+									<p>
+										Ficat audacep ortemo cuperio, nonfectus es inati, P. Tum dem.Serivid inticon sullaris porum
+										ca pubis, nostratiam inve, ocuperem ia ta, faciors senat, audemor la re, egit, quasdam que
+										conihic aucturo, vis actus, nost facessilne et fuit, ommoruncla viciori contum ducomaxima,
+										med reis. Issernu maio ines ortaber icultustemus cum hachus, sulude visside perebatus cupiemum,
+										omnenten sum manteat L. Qua vena, nihilicient. On se que intem ditebat raelintem
+										et; iam, cor in se peris hebus condelartum dercervidit, cla mentriciem inti, qui sed suam audemeri
+										postarius, consuamquem obsedis sentiamendi senatustrum auconscit; nocae consum
+										hus speribu nteremus, norteru menation suloctum hil habus.
+									</p>
+									<p id="lastParagraph">
+										1.900 CARACTERES CON ESPACIOS
+									</p>
+								</div>
+								<div class="col-sm-1"></div>
+							</div>
+						<!-- Seccion C -- -->
+					</div>
+			<!-- Análisis de principal competidor -- -->
+				<hr class="dividerHR">
+			<!-- Fotos del principal competidor -- ++ -- -->
+				<div id="fotosDelSegundoPrincipalCompetidor" style="display: unset;">
+					<!-- Seccion D -- ++ -- -->
+						<!-- Seccion D Title -- ++ -- -->
+							<div id="sectionD" class="section">
+								<div id="sectionDIcon">
+									<img id="sectionDIconImg" src="../img/d_circle_icon.png">
+								</div>
+								<div id="sectionDTitle" class="sectionTitleText">
+									<span id="secondCompetitorSectionDTitleText" class="sectionTitle">Fotos del segundo principal competidor</span>
+								</div>
+							</div>
+						<!-- Seccion D Title -- -->
+							<div id="competitorImgsDiv">
+								<div id="competidorImgsDivButtons" class="row">
+									<div id="plusCompetitorImgButtonDiv" class="col-sm-6 competitorImgButton">
+										<img src="../img/plus_icon.png">
+									</div>
+									<div id="competitorImgsDivMiddleLine"></div>
+									<div id="minusCompetitorImgButtonDiv" class="col-sm-6 competitorImgButton">
+										<img src="../img/minus_icon.png">
+									</div>
+								</div>
+								<div id="competitorImgsImgsDiv" class="row">
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+									<div class="col-sm-6 competitorImgsImgDiv">
+										<img class="competitorImgsImg" src="../img/competitor_img.png">
+										<label for="">Vista del escaparate y entrada por la calle sindicato</label>
+									</div>
+								</div>
+							</div>
+					<!-- Seccion D -- -->
+				</div>
+			<!-- Fotos del principal competidor -- -->
+				<hr class="dividerHR">
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		<!-- Descripcion del segundo competidor -- -->
+
+
+
+		<!-- Comparativa de las empresas competidoras y el punto de venta -- ++ -- -->
+			<div id="comparativaDeLasEmpresasCompetidorasYElPuntoDeVenta" style="display: unset;">
+				<div id="comparativaDeLasEmpresasCompetidorasYElPuntoDeVentaRow" class="row">
+					<!-- Title 2 -->
+						<div class="col-sm-1"></div>
+						<div id="comparativaDeLasEmpresasCompetidorasYElPuntoDeVentaTitleDiv" class="col-sm-10">
+							<div id="comparativaDeLasEmpresasCompetidorasYElPuntoDeVentaTitle" class="blue_background_title">
+								Comparativa de las empresas competidoras y el punto de venta 
+							</div>
+						</div>
+						<div class="col-sm-1"></div>
+					<!-- Title 2 -->
+					<!-- Seccion A Title 2 -- ++ -- -->
+						<div class="col-sm-1"></div>
+						<div id="sectionATitle2" class="section col-sm-10">
+							<div id="sectionATitle2Icon">
+								<img id="sectionATitle2IconImg" src="../img/a_circle_icon.png">
+							</div>
+							<div id="sectionATitle2Title" class="sectionTitleText">
+								<span id="sectionATitle2TitleText" class="sectionTitle">Análisis comparativo de la competencia</span>
+							</div>
+						</div>
+						<div class="col-sm-1"></div>
+					<!-- Seccion A Title 2 -- -->
+					<!-- Competition Comparative Analisis -- ++ -- -->
+						<div class="col-sm-1"></div>
+						<div class="competition-descripcion col-sm-10">
+							<!-- Competition Comparative Analisis Items -- ++ -- -->
+								<!-- Competition Comparative Analisis Item 1 -- ++ -- -->
+									<div class="description-item row">
+										<div class="description-item-title col-sm-12">
+											Localización
+										</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- ++ -- -->
+											<div class="description-item-progressbar-col col-sm-10">
+												<div class="progress">
+											  		<div class="progress-bar description-item-progressbar" id="competition-comparative-analisis-item-1" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="description-item-progressbar-white-lines-div">
+													<div class="description-item-progressbar-line line-1"></div>
+													<div class="description-item-progressbar-line line-2"></div>
+													<div class="description-item-progressbar-line line-3"></div>
+													<div class="description-item-progressbar-line line-4"></div>
+												</div>
+											</div>
+											<div class="description-item-progress-bar-score-number-div  col-sm-2">
+												<div class="description-item-progress-bar-score-number">
+													3.3
+												</div>
+											</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- -->
+									</div>
+								<!-- Competition Comparative Analisis Item 1 -- -->
+								<!-- Competition Comparative Analisis Item 2 -- ++ -- -->
+									<div class="description-item row">
+										<div class="description-item-title col-sm-12">
+											Área de influencia
+										</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- ++ -- -->
+											<div class="description-item-progressbar-col col-sm-10">
+												<div class="progress">
+											  		<div class="progress-bar description-item-progressbar" id="competition-comparative-analisis-item-2" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="description-item-progressbar-white-lines-div">
+													<div class="description-item-progressbar-line line-1"></div>
+													<div class="description-item-progressbar-line line-2"></div>
+													<div class="description-item-progressbar-line line-3"></div>
+													<div class="description-item-progressbar-line line-4"></div>
+												</div>
+											</div>
+											<div class="description-item-progress-bar-score-number-div  col-sm-2">
+												<div class="description-item-progress-bar-score-number">
+													3.0
+												</div>
+											</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- -->
+									</div>
+								<!-- Competition Comparative Analisis Item 2 -- -->
+								<!-- Competition Comparative Analisis Item 3 -- ++ -- -->
+									<div class="description-item row">
+										<div class="description-item-title col-sm-12">
+											Sistema de venta
+										</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- ++ -- -->
+											<div class="description-item-progressbar-col col-sm-10">
+												<div class="progress">
+											  		<div class="progress-bar description-item-progressbar" id="competition-comparative-analisis-item-3" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="description-item-progressbar-white-lines-div">
+													<div class="description-item-progressbar-line line-1"></div>
+													<div class="description-item-progressbar-line line-2"></div>
+													<div class="description-item-progressbar-line line-3"></div>
+													<div class="description-item-progressbar-line line-4"></div>
+												</div>
+											</div>
+											<div class="description-item-progress-bar-score-number-div  col-sm-2">
+												<div class="description-item-progress-bar-score-number">
+													3.0
+												</div>
+											</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- -->
+									</div>
+								<!-- Competition Comparative Analisis Item 3 -- -->
+								<!-- Competition Comparative Analisis Item 4 -- ++ -- -->
+									<div class="description-item row">
+										<div class="description-item-title col-sm-12">
+											Imagen gráfica/logotipo
+										</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- ++ -- -->
+											<div class="description-item-progressbar-col col-sm-10">
+												<div class="progress">
+											  		<div class="progress-bar description-item-progressbar" id="competition-comparative-analisis-item-4" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="description-item-progressbar-white-lines-div">
+													<div class="description-item-progressbar-line line-1"></div>
+													<div class="description-item-progressbar-line line-2"></div>
+													<div class="description-item-progressbar-line line-3"></div>
+													<div class="description-item-progressbar-line line-4"></div>
+												</div>
+											</div>
+											<div class="description-item-progress-bar-score-number-div  col-sm-2">
+												<div class="description-item-progress-bar-score-number">
+													3.0
+												</div>
+											</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- -->
+									</div>
+								<!-- Competition Comparative Analisis Item 4 -- -->
+								<!-- Competition Comparative Analisis Item 5 -- ++ -- -->
+									<div class="description-item row">
+										<div class="description-item-title col-sm-12">
+											Internet/Redes sociales
+										</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- ++ -- -->
+											<div class="description-item-progressbar-col col-sm-10">
+												<div class="progress">
+											  		<div class="progress-bar description-item-progressbar" id="competition-comparative-analisis-item-5" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+												</div>
+												<div class="description-item-progressbar-white-lines-div">
+													<div class="description-item-progressbar-line line-1"></div>
+													<div class="description-item-progressbar-line line-2"></div>
+													<div class="description-item-progressbar-line line-3"></div>
+													<div class="description-item-progressbar-line line-4"></div>
+												</div>
+											</div>
+											<div class="description-item-progress-bar-score-number-div  col-sm-2">
+												<div class="description-item-progress-bar-score-number">
+													3.3
+												</div>
+											</div>
+										<!-- Competition Comparative Analisis Item Progess Bar -- -->
+									</div>
+								<!-- Competition Comparative Analisis Item 5 -- -->
+							<!-- Competition Comparative Analisis Items -- -->
+						</div>
+						<div class="col-sm-1"></div>
+					<!-- Competition Comparative Analisis -- -->
+				</div>
+			</div>
+		<!-- Comparativa de las empresas competidoras y el punto de venta -- -->
+
+
+
+	</div>
+<!-- Information Container -- -->
+
+<!-- footer -- ++ -- -->
+	<footer>
+		<div class="header-bg" id="footer-bg"></div>
+			<div id="footer_logos">
+				<img id="firstFooterLogo" src="../img/mejora_pv.png">
+				<img id="secondFooterLogo" src="../img/cambra_de_comerc_logo.png">
+			</div>
+		<div class="headerYellowLine bottom"></div>
+	</footer>
+<!-- footer -- -->
+
+<!-- scripts -- ++ -- -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="../js/main.js" type="text/javascript"></script>
+<!-- scripts ---->
+
+</body>
+
+</html>

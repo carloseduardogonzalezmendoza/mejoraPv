@@ -2,8 +2,12 @@
 <html>
 <head>
 	<title>Contenido</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<meta charset="utf-8">
 </head>
 
 <body>
@@ -11,9 +15,10 @@
 	<div class="header">
 		<div class="header-bg"></div>
 		<span>Contenido</span>
-		<a href="home.html">
+		<a href="../home.html">
 			<span id="goBackButton">Volver al inicio</span>
 		</a>
+		<button onclick="scrollToTop()" class="btn btn-info" id="fixedGoBackButton" style="opacity: 0;">Volver al inicio</button>
 		<div class="headerYellowLine"></div>
 		<div class="header-store-icon">
 			<img src="../img/pv_icon.PNG">
@@ -28,15 +33,18 @@
 			<li>Descripción del punto de venta</li>
 			<ul>
 				<li>Actividad económica</li>
-				<li>Análisis de la actividad económica</li>
-				<li>Propuestas de Mejora de la actividad económica</li>
-			</ul>
-			<li>Cualificación del personal</li>
-			<ul>
-				<li>Encuesta de la cualificación del personal.</li>
-				<li>Indicador sintético del personal</li>
-				<li>Análisis de Personal</li>
-				<li>Propuestas de Mejora de Personal</li>
+				<ul>
+					<li>Encuesta de la actividad económica</li>
+					<li>Análisis de la actividad económica</li>
+					<li>Propuestas de Mejora de la actividad económica</li>
+				</ul>
+				<li>Cualificación del personal</li>
+				<ul>
+					<li>Encuesta de la cualificación del personal.</li>
+					<li>Indicador sintético del personal</li>
+					<li>Análisis de Personal</li>
+					<li>Propuestas de Mejora de Personal</li>
+				</ul>
 			</ul>
 			<li>Cliente</li>
 			<li>Entorno</li>
@@ -56,15 +64,17 @@
 					<li>Propuestas de Mejora Espacio urbano y factores de atracción</li>
 				</ul>
 			</ul>
-			<li><a href="competition.html">Competencia</a></li>
+			<li>
+				<a href="competition.html">Competencia</a>
+			</li>
 			<ul>
 				<li><a href="competition.html#primerCompetidorDiv">Primer competidor</a></li>
 				<ul>
 					<li><a href="competition.html#primerCompetidorTitle">Encuesta de Primer competidor</a></li>
 					<li><a href="competition.html#sectionA">Indicador sintético de Primer competidor</a></li>
 					<li><a href="competition.html#sectionB">Mapa de Primer competidor</a></li>
-					<li>Análisis de Primer competidor</li>
-					<li>Fotos de Primer competidor</li>
+					<li><a href="competition.html#sectionC">Análisis de Primer competidor</a></li>
+					<li><a href="competition.html#sectionD">Fotos de Primer competidor</a></li>
 				</ul>
 				<li>Segundo competidor</li>
 				<ul>
@@ -74,6 +84,10 @@
 					<li>Análisis de Segundo competidor</li>
 					<li>Fotos de segundo competidor</li>
 				</ul>
+			</ul>
+			<li><a href="analisis_del_establecimiento.html">Análisis del establecimiento</a></li>
+			<ul>
+				<li>Exterior establecimiento: acera, fachada, accesibilidad, rótulos, escaparate y puerta de entrada</li>
 			</ul>
 		</ul>
 	</div>
@@ -91,6 +105,14 @@
 		<div class="headerYellowLine bottom"></div>
 	</footer>
 <!-- footer -- -->
+
+<!-- scripts -- ++ -- -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="../js/main.js" type="text/javascript"></script>
+<!-- scripts ---->
+
 </body>
 
 </html>
