@@ -6,6 +6,19 @@ var secondCompetitorNavbarNav = document.getElementById('secondCompetitorNavbarN
 var primerCompetidorDiv = document.getElementById('primerCompetidorDiv');
 var segundoCompetidorDiv = document.getElementById('segundoCompetidorDiv');
 
+
+function getRandomArbitrary(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+var progress = getRandomArbitrary(1, 100);
+var progressBarProgress = document.querySelector('#progressBar1');
+var progressBarScoreNumber = document.querySelector('#score-indicator-number');
+progressBarScoreNumber.innerHTML = (progress*5)/100;
+var scoreNumberLine = document.querySelector('#scoreNumberLine');
+progressBarProgress.style.setProperty('--progress-bar-progress', progress +'%');
+progressBarScoreNumber.style.setProperty('--progress-bar-progress', progress +'%');
+scoreNumberLine.style.setProperty('--progress-bar-progress', progress +'%');
+
 if (firstCompetitorNavbarNav && secondCompetitorNavbarNav) {
 	var primerCompetidorDivHeight = primerCompetidorDiv.offsetHeight;
 }

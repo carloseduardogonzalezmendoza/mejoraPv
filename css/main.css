@@ -2,17 +2,17 @@
 :root {
     --main-color: #0078c0;
     /* progress bar variables -- ++ -- */
-        --progress-bar-progress: 66%;
+        --progress-bar-progress: 20%;
         --progress-bar-height: 50px;
         --competition-item-progress-bar-height: 25px;
         /*section a -- ++ --*/
-            --section-a-progress-bar-progress: 66%;
+            --section-a-progress-bar-progress: 70%;
             --section-a-score-number-color: #54c5f1;
         /*section a -- */
     /* progress bar variables -- */
     --opacity-transition-time: 1s;
     /* analisis del establecimiento -- ++ -- */
-        --analisis-del-establecimiento-progress-bar-progress: 66%;
+        --analisis-del-establecimiento-progress-bar-progress: 45%;
         --analisis-del-establecimiento-section-a-score-number-color: orange;
     /* analisis del establecimiento -- */
 }
@@ -153,6 +153,9 @@
         #progressBar1 {
             width: var(--progress-bar-progress);
             height: var(--progress-bar-height);
+            animation-name: progressbar-1-animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
         }
 
         #score-indicator-number {
@@ -232,7 +235,7 @@
             position: absolute;
             color: var(--section-a-score-number-color);
             font-size: xx-large;
-            left: calc(var(--progress-bar-progress) - 20px);
+            left: calc(var(--section-a-progress-bar-progress) - 20px);
             z-index: 10;
             top: 60px;
         }
@@ -245,7 +248,7 @@
             border-color: var(--section-a-score-number-color);
             width: 0px;
             height: 125%;
-            left: var(--progress-bar-progress);
+            left: var(--section-a-progress-bar-progress);
             top: -12.5%;
         }
 
@@ -648,19 +651,19 @@
 /* progressbar white lines -- ++ -- */
 
     .line-1 {
-        left: 20%;
+        left: 25%;
     }
 
     .line-2 {
-        left: 40%;
+        left: 41.5%;
     }
 
     .line-3 {
-        left: 60%;
+        left: 58%;
     }
 
     .line-4 {
-        left: 80%;
+        left: 75%;
     }
 
 /* progressbar white lines -- */
@@ -799,5 +802,9 @@
 
 /* Rules -- ++ --*/
 
+    @keyframes progressbar-1-demo-animation {
+        from {width: var(--progress-bar-progress);}
+        to {width: 100%;}
+    }
 
 /* Rules --*/
