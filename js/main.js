@@ -11,16 +11,22 @@ function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 var progress = getRandomArbitrary(1, 100);
-var progressBarProgress = document.querySelector('#progressBar1');
-var progressBarScoreNumber = document.querySelector('#score-indicator-number');
-progressBarScoreNumber.innerHTML = (progress*5)/100;
-var scoreNumberLine = document.querySelector('#scoreNumberLine');
-progressBarProgress.style.setProperty('--progress-bar-progress', progress +'%');
-progressBarScoreNumber.style.setProperty('--progress-bar-progress', progress +'%');
-scoreNumberLine.style.setProperty('--progress-bar-progress', progress +'%');
 
+// if on analisis del establecimientoView
+if (true) {
+
+}
+
+// if on competitionView
 if (firstCompetitorNavbarNav && secondCompetitorNavbarNav) {
 	var primerCompetidorDivHeight = primerCompetidorDiv.offsetHeight;
+	var progressBarProgress = document.querySelector('#progressBar1');
+	var progressBarScoreNumber = document.querySelector('#score-indicator-number');
+	progressBarScoreNumber.innerHTML = (progress*5)/100;
+	var scoreNumberLine = document.querySelector('#scoreNumberLine');
+	progressBarProgress.style.setProperty('--progress-bar-progress', progress +'%');
+	progressBarScoreNumber.style.setProperty('--progress-bar-progress', progress +'%');
+	scoreNumberLine.style.setProperty('--progress-bar-progress', progress +'%');
 }
 
 window.onscroll = function() {scrollFunction(); if (firstCompetitorNavbarNav && secondCompetitorNavbarNav) {changeCompetitorNavbar()};};

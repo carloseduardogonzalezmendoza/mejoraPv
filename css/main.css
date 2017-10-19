@@ -13,6 +13,7 @@
     --opacity-transition-time: 1s;
     /* analisis del establecimiento -- ++ -- */
         --analisis-del-establecimiento-progress-bar-progress: 45%;
+        --analisis-del-establecimiento-section-a-progress-bar-progress: 45%;
         --analisis-del-establecimiento-section-a-score-number-color: orange;
     /* analisis del establecimiento -- */
 }
@@ -452,7 +453,31 @@
         /* percentage = (score*100)/5 */
 
         #analisisDelEstablecimientoProgressBar1 {
-            width: 66%;
+            width: var(--analisis-del-establecimiento-progress-bar-progress);
+            background-color: orange;
+            height: var(--progress-bar-height);
+        }
+
+        #analisisDelEstablecimientoSectionAProgressBar1 {
+            height: var(--progress-bar-height);
+            width: var(--analisis-del-establecimiento-section-a-progress-bar-progress);
+            background-color: orange;
+        }
+
+        #analisisDelEstablecimientoScoreNumberLine {
+            position: absolute;
+            color: #0275d8;
+            font-size: xx-large;
+            left: var(--analisis-del-establecimiento-progress-bar-progress);
+        }
+
+        #analisis-del-establecimiento-score-indicator-number {
+            position: absolute;
+            color: #0275d8;
+            font-size: xx-large;
+            left: calc(var(--analisis-del-establecimiento-progress-bar-progress) - 20px);
+            z-index: 10;
+            top: 60px;
         }
 
         /* desription item progressbar -- ++ -- */
@@ -531,11 +556,7 @@
 
         /* desription item progressbar -- */
 
-        #analisisDelEstablecimientoSectionAProgressBar {
-            width: var(--analisis-del-establecimiento-progress-bar-progress);
-            background-color: orange;
-            height: var(--competition-item-progress-bar-height);
-        }
+
 
         #analisisDelEstablecimeintoSectionAScoreNumberLine {
             position: absolute;
@@ -545,15 +566,16 @@
             border-color: var(--analisis-del-establecimiento-section-a-score-number-color);
             width: 0px;
             height: 125%;
-            left: var(--analisis-del-establecimiento-progress-bar-progress);
+            left: var(--analisis-del-establecimiento-section-a-progress-bar-progress);
             top: -12.5%;
+            z-index: 10;
         }
 
         #analisisDelEstabecimientoSectionAScoreIndicatorNumber {
             position: absolute;
             color: var(--section-a-score-number-color);
             font-size: xx-large;
-            left: calc(var(--analisis-del-establecimiento-progress-bar-progress) - 20px);
+            left: var(--analisis-del-establecimiento-section-a-progress-bar-progress);
             z-index: 10;
             top: 60px;
         }
@@ -667,19 +689,19 @@
     }
 
     .description-item-line-1 {
-        left: 25%;
+        left: 20%;
     }
 
     .description-item-line-2 {
-        left: 41.5%;
+        left: 40%;
     }
 
     .description-item-line-3 {
-        left: 58%;
+        left: 60%;
     }
 
     .description-item-line-4 {
-        left: 75%;
+        left: 80%;
     }
 
 /* progressbar white lines -- */
