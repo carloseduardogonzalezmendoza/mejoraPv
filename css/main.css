@@ -666,6 +666,22 @@
         left: 75%;
     }
 
+    .description-item-line-1 {
+        left: 25%;
+    }
+
+    .description-item-line-2 {
+        left: 41.5%;
+    }
+
+    .description-item-line-3 {
+        left: 58%;
+    }
+
+    .description-item-line-4 {
+        left: 75%;
+    }
+
 /* progressbar white lines -- */
 
     .progress {
